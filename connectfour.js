@@ -13,13 +13,22 @@ const winCombos = [
     [2, 6, 10, 14],
     [3, 7, 11, 15],
 ]
+let playerTurn = 'X'
 
 const play = document.querySelectorAll('.box')
 
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
-        play[i].innerHTML = playerOne
-    })
+        if (playerTurn === 'X') {
+            play[i].innerHTML = playerOne
+            playerTurn = 'O'
+        } else{
+            play[i].innerHTML = playerTwo
+            playerTurn = 'X'
+        }
+
+     })   
+
 }
 
 
