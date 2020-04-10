@@ -1,7 +1,11 @@
 .container{
-    height: 250px;
-    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
     border: white;
+    width: 250px;
+    
+
+
 }
 
 
@@ -12,7 +16,6 @@
     border-style: groove;
     background-color: white;
     float: left;
-
 }
 
 

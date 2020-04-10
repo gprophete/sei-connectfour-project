@@ -21,20 +21,36 @@ const playerTwo = "O"
 // ]
 
 
+
 let playerTurn = 'X'
+
 
 const play = document.querySelectorAll('.box')
 
+// let row = {
+//     row1: [0,1,2,3],
+//     row2: [4,5,6,7],
+//     row3: [8,9,10,11],
+//     row4: [12,13,15,16],
+// }
+// let column = {
+//     col1: [0,4,8,12],
+//     col2: [1,5,9,13],
+//     col3: [2,6,10,14],
+//     col4: [3,7,11,15]
+// }
+
+
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
-        if (playerTurn === 'X') {
+        if (playerTurn === 'X'){
             play[i].innerHTML = playerOne
             playerTurn = 'O'
         } else {
             play[i].innerHTML = playerTwo
             playerTurn = 'X'
         }
-
+    
     })
 
 }
