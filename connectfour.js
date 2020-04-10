@@ -1,5 +1,5 @@
-for (let i=0; i<16; i++){
-    let emptyBoard= document.createElement('div')
+for (let i = 0; i < 16; i++) {
+    let emptyBoard = document.createElement('div')
     emptyBoard.classList.add('box')
     document.body.appendChild(emptyBoard)
 
@@ -27,19 +27,26 @@ let playerTurn;
 
 const play = document.querySelectorAll('.box')
 
-let row;
-let column;
 
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
-        if (playerTurn === 'X'){
-            play[i].innerHTML = playerOne
-            playerTurn = 'O'
-        } else {
-            play[i].innerHTML = playerTwo
-            playerTurn = 'X'
+
+        if (i < 4) {
+            if (play[i + 12].innerHTML == "") {
+                if (playerTurn === 'X') {
+                    play[i + 12].innerHTML = playerOne
+                    playerTurn = 'O'
+                } else {
+                    play[i + 12].innerHTML = playerTwo
+                    playerTurn = 'X'
+                }
+
+
+            }
         }
-    
+
+
+
     })
 
 }
