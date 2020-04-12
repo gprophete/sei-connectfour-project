@@ -42,8 +42,33 @@ for (let i = 0; i < play.length; i++) {
                 }
 
 
+            }else if (play[i + 8].innerHTML == "") {
+                if (playerTurn === 'X') {
+                    play[i + 8].innerHTML = playerOne
+                    playerTurn = 'O'
+                } else {
+                    play[i + 8].innerHTML = playerTwo
+                    playerTurn = 'X'
+                }
+
+            } else if (play[i + 4].innerHTML == "") {
+                if (playerTurn === 'X') {
+                    play[i + 4].innerHTML = playerOne
+                    playerTurn = 'O'
+                } else {
+                    play[i+4].innerHTML = playerTwo
+                    playerTurn = 'X'
+                }
+            }else {
+                if (playerTurn === 'X') {
+                    play[i].innerHTML = playerOne
+                    playerTurn = 'O'
+                } else {
+                    play[i].innerHTML = playerTwo
+                    playerTurn = 'X'
+                }
             }
-            
+
         }
 
     })
