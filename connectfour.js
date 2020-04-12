@@ -43,10 +43,8 @@ for (let i = 0; i < play.length; i++) {
 
 
             }
+            
         }
 
-
-
     })
-
 }
