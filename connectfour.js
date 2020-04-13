@@ -109,8 +109,17 @@ for (let i = 0; i < play.length; i++) {
                 && play[i + 28].innerHTML == playerTwo) {
                 alert('win')
             }
+            if (play[6].innerHTML == playerTwo
+                && play[12].innerHTML == playerTwo
+                && play[18].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo) {
+                alert('win')
+            }
             
-            
+
+
+
+
 
         }
 
