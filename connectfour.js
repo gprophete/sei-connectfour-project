@@ -104,7 +104,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[i + 21].innerHTML == playerTwo) {
                 alert('win')
             }
-            // Diagonal winning combo
+            // Diagonal winning combo for player two
             if (play[i + 7].innerHTML == playerTwo
                 && play[i + 14].innerHTML == playerTwo
                 && play[i + 21].innerHTML == playerTwo
@@ -147,6 +147,116 @@ for (let i = 0; i < play.length; i++) {
                 && play[35].innerHTML == playerTwo) {
                 alert('win')
             }
+            if (play[4].innerHTML == playerTwo
+                && play[10].innerHTML == playerTwo
+                && play[16].innerHTML == playerTwo
+                && play[22].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[10].innerHTML == playerTwo
+                && play[16].innerHTML == playerTwo
+                && play[22].innerHTML == playerTwo
+                && play[28].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[13].innerHTML == playerTwo
+                && play[19].innerHTML == playerTwo
+                && play[25].innerHTML == playerTwo
+                && play[31].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[19].innerHTML == playerTwo
+                && play[25].innerHTML == playerTwo
+                && play[31].innerHTML == playerTwo
+                && play[37].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[20].innerHTML == playerTwo
+                && play[26].innerHTML == playerTwo
+                && play[32].innerHTML == playerTwo
+                && play[38].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[0].innerHTML == playerTwo
+                && play[8].innerHTML == playerTwo
+                && play[16].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[8].innerHTML == playerTwo
+                && play[16].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo
+                && play[32].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[16].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo
+                && play[32].innerHTML == playerTwo
+                && play[40].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[6].innerHTML == playerTwo
+                && play[12].innerHTML == playerTwo
+                && play[18].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[1].innerHTML == playerTwo
+                && play[9].innerHTML == playerTwo
+                && play[17].innerHTML == playerTwo
+                && play[25].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[9].innerHTML == playerTwo
+                && play[17].innerHTML == playerTwo
+                && play[25].innerHTML == playerTwo
+                && play[33].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[17].innerHTML == playerTwo
+                && play[25].innerHTML == playerTwo
+                && play[33].innerHTML == playerTwo
+                && play[41].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[7].innerHTML == playerTwo
+                && play[15].innerHTML == playerTwo
+                && play[23].innerHTML == playerTwo
+                && play[31].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[15].innerHTML == playerTwo
+                && play[23].innerHTML == playerTwo
+                && play[31].innerHTML == playerTwo
+                && play[39].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[14].innerHTML == playerTwo
+                && play[22].innerHTML == playerTwo
+                && play[30].innerHTML == playerTwo
+                && play[38].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[2].innerHTML == playerTwo
+                && play[10].innerHTML == playerTwo
+                && play[18].innerHTML == playerTwo
+                && play[26].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[10].innerHTML == playerTwo
+                && play[18].innerHTML == playerTwo
+                && play[26].innerHTML == playerTwo
+                && play[34].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[3].innerHTML == playerTwo
+                && play[11].innerHTML == playerTwo
+                && play[19].innerHTML == playerTwo
+                && play[27].innerHTML == playerTwo) {
+                alert('win')
+            }
+
+
             
 
 
