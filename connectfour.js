@@ -73,6 +73,7 @@ for (let i = 0; i < play.length; i++) {
 
                 }
             }
+            // Vertical winnig combo
             if (play[i + 35].innerHTML == playerOne
                 && play[i + 28].innerHTML == playerOne
                 && play[i + 21].innerHTML == playerOne
@@ -103,6 +104,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[i + 21].innerHTML == playerTwo) {
                 alert('win')
             }
+            // Diagonal winning combo
             if (play[i + 7].innerHTML == playerTwo
                 && play[i + 14].innerHTML == playerTwo
                 && play[i + 21].innerHTML == playerTwo
@@ -115,7 +117,20 @@ for (let i = 0; i < play.length; i++) {
                 && play[24].innerHTML == playerTwo) {
                 alert('win')
             }
+            if (play[12].innerHTML == playerTwo
+                && play[18].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo
+                && play[30].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[18].innerHTML == playerTwo
+                && play[24].innerHTML == playerTwo
+                && play[30].innerHTML == playerTwo
+                && play[36].innerHTML == playerTwo) {
+                alert('win')
+            }
             
+
 
 
 
