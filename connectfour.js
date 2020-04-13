@@ -91,6 +91,12 @@ for (let i = 0; i < play.length; i++) {
                 && play[i + 28].innerHTML == playerOne) {
                 alert('win')
             }
+            if (play[i + 35].innerHTML == playerTwo
+                && play[i + 28].innerHTML == playerTwo
+                && play[i + 21].innerHTML == playerTwo
+                && play[i + 14].innerHTML == playerTwo) {
+                alert('win')
+            }
             
             
 
