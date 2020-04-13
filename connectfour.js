@@ -129,7 +129,26 @@ for (let i = 0; i < play.length; i++) {
                 && play[36].innerHTML == playerTwo) {
                 alert('win')
             }
+            if (play[5].innerHTML == playerTwo
+                && play[11].innerHTML == playerTwo
+                && play[17].innerHTML == playerTwo
+                && play[23].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[11].innerHTML == playerTwo
+                && play[17].innerHTML == playerTwo
+                && play[23].innerHTML == playerTwo
+                && play[29].innerHTML == playerTwo) {
+                alert('win')
+            }
+            if (play[17].innerHTML == playerTwo
+                && play[23].innerHTML == playerTwo
+                && play[29].innerHTML == playerTwo
+                && play[35].innerHTML == playerTwo) {
+                alert('win')
+            }
             
+
 
 
 
