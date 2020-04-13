@@ -85,6 +85,12 @@ for (let i = 0; i < play.length; i++) {
                 && play[i + 21].innerHTML == playerOne) {
                 alert('win')
             }
+            if (play[i + 7].innerHTML == playerOne
+                && play[i + 14].innerHTML == playerOne
+                && play[i + 21].innerHTML == playerOne
+                && play[i + 28].innerHTML == playerOne) {
+                alert('win')
+            }
             
             
 
