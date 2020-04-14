@@ -14,8 +14,7 @@ const playerTwo = "O"
 let playerTurn;
 let scoreOne = 0
 let scoreTwo = 0
-let winOne;
-let winTwo;
+
 const button = document.createElement('button')
 document.body.appendChild(button)
 button.textContent += "Reset"
@@ -25,6 +24,7 @@ for (let i = 0; i < 42; i++) {
         play[i].innerHTML = ""
     })
 }
+// Score boxes added
 let scoreBox1 = document.createElement('div')
 scoreBox1.classList.add('boardX')
 document.body.appendChild(scoreBox1)
@@ -32,16 +32,16 @@ document.body.appendChild(scoreBox1)
 let scoreBox2 = document.createElement('div')
 scoreBox2.classList.add('boardO')
 document.body.appendChild(scoreBox2)
-// scoreboard1.textContent +='PlayerOne'
 
 scoreBox1.innerHTML = 'playerI =' + scoreOne
 scoreBox2.innerHTML = 'PlayerII =' + scoreTwo
 
 
 const play = document.querySelectorAll('.box')
+
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
-        // console.log(i)
+        
         // making first move to bottom row
         if (i < 7) {
             if (play[i + 35].innerHTML == "") {
@@ -107,8 +107,7 @@ for (let i = 0; i < play.length; i++) {
                 scoreOne++
                 scoreBox1.innerHTML = 'playerI =' + scoreOne
                 
-
-            }
+            } 
             if (play[i].innerHTML == playerOne
                 && play[i + 7].innerHTML == playerOne
                 && play[i + 14].innerHTML == playerOne
@@ -305,6 +304,7 @@ for (let i = 0; i < play.length; i++) {
                 alert('PlayerTwo wins')
                 scoreTwo++
                 scoreBox2.innerHTML = 'playerII =' + scoreTwo
+
             }
             if (play[15].innerHTML == playerTwo
                 && play[23].innerHTML == playerTwo
@@ -944,9 +944,9 @@ for (let i = 0; i < play.length; i++) {
 
 
 
-// Score box element added
 
 
-// scoreBox.textContent += "Wins"
+
+
 
 
