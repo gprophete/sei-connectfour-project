@@ -24,3 +24,6 @@ The objective of the game is to connect four similar dots. It requires 2 players
 
 ## Project board
 https://github.com/gprophete/sei-connectfour-project/projects
+
+## Game site
+https://connectfourxoxo.netlify.com/
