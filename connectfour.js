@@ -706,7 +706,7 @@ for (let i = 0; i < play.length; i++) {
 const button = document.createElement('button')
 
 document.body.appendChild(button)
-button.textContent += "Start Game"
+button.textContent += "Reset"
 
 
 
@@ -715,4 +715,4 @@ for (let i= 0; i< 42; i++){
         play[i].innerHTML = ""
     })
 }
-function scoreTrack()
+
