@@ -22,4 +22,4 @@ The objective of the game is to connect four similar dots. It requires 2 players
 
 ## Wireframe
 
-![](2020-04-08-13-56-26.png)
+![](2020-04-13-23-50-24.png)
