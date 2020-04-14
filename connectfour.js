@@ -1,3 +1,7 @@
+const title = document.createElement('h1')
+document.body.appendChild(title)
+title.textContent += "Connect Four"
+
 for (let i = 0; i < 42; i++) {
     let emptyBoard = document.createElement('div')
     emptyBoard.classList.add('box')
@@ -703,12 +707,12 @@ for (let i = 0; i < play.length; i++) {
     })
 
 }
-const button = document.createElement('button')
 
+
+
+const button = document.createElement('button')
 document.body.appendChild(button)
 button.textContent += "Reset"
-
-
 
 for (let i= 0; i< 42; i++){
     button.addEventListener('click', () => {

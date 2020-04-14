@@ -5,9 +5,7 @@
     width: 400px;
     padding: 30px;
     margin: 30px;
-
     
-
 
 }
 
@@ -19,17 +17,27 @@
     border-style: groove;
     border-radius: 30%;
     background-color: white;
-    float: left;
+    /* float: left; */
     text-align: center;
     margin: 0;
+    background-color: beige;
 
 }
 button {
-    width: 60px;
-    height: 30px;
+    width: 700px;
+    height: 70px;
+    margin: 0;
+    text-align: center;  
+    font-size: 40px;
     
-
+}
+button:hover {
+    background-color: darkcyan;
 }
 
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
 
     
