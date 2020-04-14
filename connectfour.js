@@ -11,26 +11,44 @@ for (let i = 0; i < 42; i++) {
 
 const playerOne = "X"
 const playerTwo = "O"
-
-
 let playerTurn;
+let score = 0
+let winOne;
+let winTwo;
+const button = document.createElement('button')
+document.body.appendChild(button)
+button.textContent += "Reset"
+
+for (let i= 0; i< 42; i++){
+    button.addEventListener('click', () => {
+        play[i].innerHTML = ""
+    })
+}
+let scoreBox1 = document.createElement('div')
+scoreBox1.classList.add('boardX')
+document.body.appendChild(scoreBox1)
+
+let scoreBox2 = document.createElement('div')
+scoreBox2.classList.add('boardO')
+document.body.appendChild(scoreBox2)
+
+scoreBox1.innerHTML = score
+scoreBox2.innerHTML = score
 
 
 const play = document.querySelectorAll('.box')
-
-
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
         // console.log(i)
         // making first move to bottom row
         if (i < 7) {
             if (play[i + 35].innerHTML == "") {
-                if (playerTurn === 'X') {
-                    play[i + 35].innerHTML = playerOne
-                    playerTurn = 'O'
-                } else {
+                if (playerTurn === 'O') {
                     play[i + 35].innerHTML = playerTwo
                     playerTurn = 'X'
+                } else {
+                    play[i + 35].innerHTML = playerOne
+                    playerTurn = 'O'
                 }
 
 
@@ -78,23 +96,36 @@ for (let i = 0; i < play.length; i++) {
                 }
             }
             // Vertical winnig combo
+
             if (play[i + 35].innerHTML == playerOne
                 && play[i + 28].innerHTML == playerOne
                 && play[i + 21].innerHTML == playerOne
-                && play[i + 14].innerHTML == playerOne) {
+                && play[i + 14].innerHTML == playerOne) { 
+                score++
                 alert('PlayerOne wins')
+                scoreBox.innerHTML = score 
+                
+                
             }
             if (play[i].innerHTML == playerOne
                 && play[i + 7].innerHTML == playerOne
                 && play[i + 14].innerHTML == playerOne
                 && play[i + 21].innerHTML == playerOne) {
+                score++
                 alert('PlayerOne wins')
+                scoreBox.innerHTML = score
+
+
+                
             }
             if (play[i + 7].innerHTML == playerOne
                 && play[i + 14].innerHTML == playerOne
                 && play[i + 21].innerHTML == playerOne
                 && play[i + 28].innerHTML == playerOne) {
+                score++
                 alert('PlayerOne wins')
+
+    
             }
             if (play[i + 35].innerHTML == playerTwo
                 && play[i + 28].innerHTML == playerTwo
@@ -416,6 +447,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[37].innerHTML == playerTwo
                 && play[38].innerHTML == playerTwo) {
                 alert('PlayerTwo wins')
+                
             }
             if (play[36].innerHTML == playerTwo
                 && play[37].innerHTML == playerTwo
@@ -500,6 +532,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[18].innerHTML == playerTwo
                 && play[19].innerHTML == playerTwo) {
                 alert('PlayerTwo wins')
+                
             }
             if (play[17].innerHTML == playerTwo
                 && play[18].innerHTML == playerTwo
@@ -560,6 +593,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[36].innerHTML == playerOne
                 && play[37].innerHTML == playerOne
                 && play[38].innerHTML == playerOne) {
+                    hightlight
                 alert('PlayerOne wins')
             }
             if (play[36].innerHTML == playerOne
@@ -615,6 +649,7 @@ for (let i = 0; i < play.length; i++) {
                 && play[24].innerHTML == playerOne
                 && play[25].innerHTML == playerOne) {
                 alert('PlayerOne wins')
+
             }
             if (play[23].innerHTML == playerOne
                 && play[24].innerHTML == playerOne
@@ -710,13 +745,10 @@ for (let i = 0; i < play.length; i++) {
 
 
 
-const button = document.createElement('button')
-document.body.appendChild(button)
-button.textContent += "Reset"
 
-for (let i= 0; i< 42; i++){
-    button.addEventListener('click', () => {
-        play[i].innerHTML = ""
-    })
-}
+// Score box element added
+
+
+// scoreBox.textContent += "Wins"
+
 
