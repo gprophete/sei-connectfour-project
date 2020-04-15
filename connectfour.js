@@ -41,7 +41,7 @@ const play = document.querySelectorAll('.box')
 
 for (let i = 0; i < play.length; i++) {
     play[i].addEventListener('click', () => {
-        
+
         // making first move to bottom row
         if (i < 7) {
             if (play[i + 35].innerHTML == "") {
@@ -106,8 +106,8 @@ for (let i = 0; i < play.length; i++) {
                 alert('PlayerOne wins')
                 scoreOne++
                 scoreBox1.innerHTML = 'playerI =' + scoreOne
-                
-            } 
+
+            }
             if (play[i].innerHTML == playerOne
                 && play[i + 7].innerHTML == playerOne
                 && play[i + 14].innerHTML == playerOne
