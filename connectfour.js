@@ -33,8 +33,8 @@ let scoreBox2 = document.createElement('div')
 scoreBox2.classList.add('boardO')
 document.body.appendChild(scoreBox2)
 
-scoreBox1.innerHTML = 'playerI =' + scoreOne
-scoreBox2.innerHTML = 'PlayerII =' + scoreTwo
+scoreBox1.innerHTML = 'playerX =' + scoreOne
+scoreBox2.innerHTML = 'PlayerO =' + scoreTwo
 
 
 const play = document.querySelectorAll('.box')
